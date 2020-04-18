@@ -1,0 +1,578 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+*::selection {
+  background: #333;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 105vh;
+  background: url("./images/rafiki.png");
+  background-size: cover;
+}
+
+/* ----------------------- ABOUT ----------------------- */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.img-about {
+  margin-top: 130px;
+}
+
+.text-about {
+  margin-top: 20px;
+  text-align: center;
+  width: 600px;
+}
+
+.text-about h2 {
+  color: #3664ff;
+}
+
+.text-about p {
+  color: #222;
+  font-weight: 600;
+}
+
+/* ----------------------- IMAGES ----------------------- */
+
+.img-user {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.img-icon {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.img-icon:hover {
+  opacity: 50%;
+}
+
+.img-design {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.img-fluid {
+  width: 500px;
+}
+/* ----------------------- PROJECTS ----------------------- */
+
+.content {
+  height: 95vh;
+}
+
+.projects-title {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-see-more {
+  width: 200px;
+  height: 40px;
+  background: #3E83F1;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 15px;
+}
+.btn-see-more:hover {
+  opacity: 85%;
+}
+
+/* ----------------------- SKILLS ----------------------- */
+
+.div-skills {
+  background: #444;
+  height: 240vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.skills-content {
+  width: 800px;
+}
+
+.skills-content p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+.html {
+  width: 100%;
+  background-color: #3B2ECF;
+}
+.css {
+  width: 85%;
+  background-color: #3B2ECF;
+}
+.js {
+  width: 90%;
+  background-color: #3B2ECF;
+}
+.php {
+  width: 90%;
+  background-color: #3B2ECF;
+}
+.java {
+  width: 92%;
+  background-color: #3B2ECF;
+}
+.react {
+  width: 80%;
+  background-color: #3B2ECF;
+}
+.node {
+  width: 83%;
+  background-color: #3B2ECF;
+}
+.jquery {
+  width: 87%;
+  background-color: #3B2ECF;
+}
+.bootstrap {
+  width: 95%;
+  background-color: #3B2ECF;
+}
+.sql {
+  width: 90%;
+  background-color: #3B2ECF;
+}
+.mongodb {
+  width: 72%;
+  background-color: #3B2ECF;
+}
+.javaNativo {
+  width: 88%;
+  background-color: #3B2ECF;
+}
+.reactNative {
+  width: 86%;
+  background-color: #3B2ECF;
+}
+.flutter {
+  width: 80%;
+  background-color: #3B2ECF;
+}
+
+/* ----------------------- CARDS ----------------------- */
+
+.img-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-card h2, p{
+ color: #111;
+ text-align: center;
+}
+.img-fluid-card{
+  width: 100%;
+  height: 200px;
+}
+.img-fluid-card-phone{
+  width: 105px;
+  height: 200px;
+}
+
+.btn-card{
+  background: #E02041;
+  height: 40px;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-card:hover{
+  opacity: 85%;
+}
+
+.btn-card-open{
+  background: #222;
+  height: 40px;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-card-open:hover{
+  opacity: 85%;
+}
+
+.card {
+  background-color: #f5f5f5;
+  color: white;
+  padding: 1rem;
+  height: 420px;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #111;
+}
+
+.btn-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-footer h4 {
+  color: #fff;
+}
+
+.btn-footer p {
+  color: #fff;
+}
+.download-cv{
+  width: 200px;
+  height: 40px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.download-cv:hover {
+  background: #3664ff;
+  color: #f5f5f5;
+}
+.btn-mail {
+  width: 200px;
+  height: 40px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin: 20px;
+}
+.btn-mail:hover {
+  background: #3664ff;
+  color: #f5f5f5;
+}
+
+/* ----------------------- NAVBAR ----------------------- */
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #3664ff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #3664ff;
+}
+
+nav.black .logo {
+  color: #fff;
+}
+
+nav.black ul li a {
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #3664ff;
+  font-size: 16px;
+  transition: 0.2s ease-in;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: #111;
+}
+
+nav.black ul li a:hover {
+  color: #111;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #3664ff;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: rgb(245, 245, 245, 0.9);
+  }
+
+  nav.black ul {
+    background: rgb(245, 245, 245, 0.9);
+  }
+
+  nav .logo {
+    color: #fff;
+  }
+
+  nav ul li a {
+    color: #111;
+  }
+  nav ul li a:hover {
+    color: #3664ff;
+  }
+
+  nav.black ul li a {
+    color: #111;
+  }
+  nav.black ul li a:hover {
+    color: #3664ff;
+  }
+
+  .showing {
+    max-height: 34em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+
+@media (max-width: 800px) {
+  .content {
+    height: 100vh;
+  }
+
+  .div-skills {
+    height: 120vh;
+  }
+
+  .skills-content {
+    width: 380px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer {
+    height: 100%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    height: 120vh;
+  }
+  .text-about {
+    margin-top: 20px;
+    text-align: center;
+    width: 300px;
+  }
+  .about-me {
+    text-align: center;
+  }
+  .content {
+    height: 242vh;
+    margin: 20px;
+  }
+  .card{
+    height: 440px;
+  }
+
+  .div-skills {
+    background: #444;
+    height: 230vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+
+  .skills-content {
+    width: 300px;
+  }
+
+  .container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+  }
+
+  .skills {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+  }
+
+  .footer {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+header {
+  height: 45vh;
+}
+  .content {
+    height: 50vh;
+  }
+
+  .div-skills {
+    height: 110vh;
+  }
+
+  .skills-content {
+    width: 380px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer {
+    height: 100%;
+  }
+  .card{
+    height: 450px;
+  }
+  .skills-content {
+    width: 800px;
+  }
+}
